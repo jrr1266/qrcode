@@ -64,9 +64,7 @@ a {
   border-radius: 4px;
   outline: none;
 }
-i {
-  margin-left: -15px;
-}
+
 .action-container {
   display: flex;
   justify-content: space-around;
@@ -138,9 +136,5 @@ i {
   }
   h1 {
     font-size: 10px;
-  }
-  i {
-    position: relative;
-    margin: -20px;
   }
 }
