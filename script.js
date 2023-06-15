@@ -44,7 +44,7 @@ async function driveShare() {
         title: text,
       });
     } catch (error) {
-      alert("Your browser doesn't support sharing.");
+      alert("Tu navegador no es compatible con share");
     }
   }, 100);
 }
