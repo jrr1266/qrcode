@@ -8,7 +8,7 @@ qrText.addEventListener("input", driveQRText);
 sizes.addEventListener("change", driveSize);
 shareBtn.addEventListener("click", driveShare);
 
-const defaultUrl = "https://jrr1266.github.io/personalWeb/";
+const defaultUrl = "";
 let text = defaultUrl ;
 let size = 400;
 
