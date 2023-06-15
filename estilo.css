@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #010118, #00000f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  color: #bbbfce;
+  font-weight: 100;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;
+}
+.qr-text {
+  padding: 1rem;
+  display: block;
+  background-color: #181629;
+  border: 1px solid #414866;
+  border-radius: 4px;
+  width: 100%;
+  margin: 0 1px;
+  outline: none;
+  font-size: 15px;
+  color: #fff;
+}
+.qr-text::placeholder {
+  font-family: "Courier New", Courier, monospace;
+}
+
+#qr-code {
+  height: 450px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #414866;
+}
+#qr-code img,
+#qr-code canvas {
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+#talla {
+  width: 30%;
+  height: 30px;
+  color: #fff;
+  background-color: #181b29;
+  border: 1px solid #414866;
+  border-radius: 4px;
+  outline: none;
+}
+i {
+  margin-left: -15px;
+}
+.action-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5px;
+}
+.btn {
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  padding: 14px;
+  background-color: #181629;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.btn span {
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.download {
+  color: #fff;
+  width: 200px;
+  height: 50px;
+  padding: 14px;
+  background-color: #181629;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.download span {
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+@media screen and (max-width: 450px) {
+  #qr-code {
+    width: 100%;
+    height: 500px;
+  }
+  .btn {
+    min-height: unset;
+  }
+}
+@media screen and (max-width: 400px) {
+  .action-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  #qr-code {
+    width: 300px;
+  }
+  .qr-text {
+    font-size: 10px;
+  }
+  .download span {
+    font-size: 15px;
+  }
+  .btn span {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 10px;
+  }
+  i {
+    position: relative;
+    margin: -20px;
+  }
+}
